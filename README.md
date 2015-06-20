@@ -1,8 +1,3 @@
-DroidOnRoids Task 1
-
-Aplikacja służąca do pobierania historii smsów. Wyświetlanie historii smsów powinno być możliwe w położeniu:
-* pionowym,
-* poziomym (opcjonalne).
 
 #Vertical Main View
 ![Vertical Main View](http://i.imgur.com/LTj4dvY.png)
