@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="16dp">
+
+    <View
+        android:id="@+id/other_triangle"
+        android:layout_width="25dp"
+
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="19dp"
+        android:background="@drawable/triangle_left" />
+
+    <RelativeLayout
+        android:id="@+id/other_speach_cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/other_triangle"
+        android:layout_toRightOf="@+id/other_triangle"
+        android:background="@drawable/rectangle_left"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/recived_message_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/window_background" />
+
+        <TextView
+            android:id="@+id/recived_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recived_message_textview"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/window_background"
+            android:textSize="12sp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/other_chat_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        >
+
+        <ImageView
+            android:id="@+id/recived_image_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/recived_image_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="N"
+            android:textColor="@color/window_background"
+            android:textSize="24dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

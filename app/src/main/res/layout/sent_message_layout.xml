@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="16dp">
+
+    <View
+        android:id="@+id/my_triangle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/myself_chat_icon"
+        android:layout_alignRight="@+id/myself_chat_icon"
+        android:layout_alignTop="@+id/myself_chat_icon"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/triangle" />
+
+    <RelativeLayout
+        android:id="@+id/my_speechcloud_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/my_triangle"
+        android:layout_toLeftOf="@+id/my_triangle"
+        android:background="@drawable/rectangle"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/sent_message_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="elooo" />
+
+        <TextView
+            android:id="@+id/sent_message_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sent_message_textview"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="5 mar"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myself_chat_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        >
+
+        <ImageView
+            android:id="@+id/conversation_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/circle"
+             />
+
+        <ImageView
+            android:id="@+id/image_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_account_white_24dp"
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>
