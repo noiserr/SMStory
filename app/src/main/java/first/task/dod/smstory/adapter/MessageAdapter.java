@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 import first.task.dod.smstory.R;
-import first.task.dod.smstory.entity.Message;
+import first.task.dod.smstory.model.Message;
 
 /**
  * Created by noiser on 18.06.15.

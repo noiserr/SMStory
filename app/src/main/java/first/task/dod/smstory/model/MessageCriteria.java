@@ -1,4 +1,4 @@
-package first.task.dod.smstory.entity;
+package first.task.dod.smstory.model;
 
 /**
  * Created by noiser on 19.06.15.

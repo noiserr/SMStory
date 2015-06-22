@@ -13,10 +13,10 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import first.task.dod.smstory.adapter.MessageAdapter;
+import first.task.dod.smstory.presenter.IDetailPresenter;
 import first.task.dod.smstory.presenter.DetailPresenter;
-import first.task.dod.smstory.presenter.DetailPresenterImpl;
-import first.task.dod.smstory.entity.Message;
-import first.task.dod.smstory.entity.MessageCriteria;
+import first.task.dod.smstory.model.Message;
+import first.task.dod.smstory.model.MessageCriteria;
 import first.task.dod.smstory.view.DetailView;
 
 public class DetailsActivity extends AppCompatActivity implements DetailView {
@@ -27,7 +27,7 @@ public class DetailsActivity extends AppCompatActivity implements DetailView {
     RecyclerView recyclerView;
     String contactName;
     String threadId;
-    private DetailPresenter detailPresenter;
+    private IDetailPresenter IDetailPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,14 +45,14 @@ public class DetailsActivity extends AppCompatActivity implements DetailView {
         MessageCriteria criteria = new MessageCriteria();
         criteria.setThreadID(threadId);
         criteria.setName(contactName);
-        detailPresenter = new DetailPresenterImpl(getApplicationContext(),this, criteria);
+        IDetailPresenter = new DetailPresenter(getApplicationContext(),this, criteria);
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        detailPresenter.onResume();
+        IDetailPresenter.onResume();
     }
 
     @Override

@@ -15,7 +15,7 @@ import butterknife.InjectView;
 import de.greenrobot.event.EventBus;
 import first.task.dod.smstory.R;
 import first.task.dod.smstory.event.ShowDetailsEvent;
-import first.task.dod.smstory.entity.Conversation;
+import first.task.dod.smstory.model.Conversation;
 
 /**
  * Created by noiser on 18.06.15.

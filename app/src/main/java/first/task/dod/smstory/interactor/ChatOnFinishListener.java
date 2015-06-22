@@ -1,8 +1,8 @@
-package first.task.dod.smstory.model;
+package first.task.dod.smstory.interactor;
 
 import java.util.List;
 
-import first.task.dod.smstory.entity.Message;
+import first.task.dod.smstory.model.Message;
 
 /**
  * Created by noiser on 19.06.15.

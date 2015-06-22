@@ -1,4 +1,4 @@
-package first.task.dod.smstory.model;
+package first.task.dod.smstory.interactor;
 
 import android.content.Context;
 
@@ -7,7 +7,7 @@ import first.task.dod.smstory.service.SmsService;
 /**
  * Created by noiser on 19.06.15.
  */
-public class FindConversationInteractorImpl implements FindConversationInteractor {
+public class FindConversationInteractor implements IFindConversationInteractor {
 
 
     @Override

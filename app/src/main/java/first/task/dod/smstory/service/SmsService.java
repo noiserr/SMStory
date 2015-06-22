@@ -10,8 +10,8 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import first.task.dod.smstory.entity.Conversation;
-import first.task.dod.smstory.entity.Message;
+import first.task.dod.smstory.model.Conversation;
+import first.task.dod.smstory.model.Message;
 
 public class SmsService {
     private static String ADDRESS = "address";

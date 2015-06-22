@@ -11,9 +11,9 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import first.task.dod.smstory.adapter.ConversationAdapter;
+import first.task.dod.smstory.presenter.IMainPresenter;
 import first.task.dod.smstory.presenter.MainPresenter;
-import first.task.dod.smstory.presenter.MainPresenterImpl;
-import first.task.dod.smstory.entity.Conversation;
+import first.task.dod.smstory.model.Conversation;
 import first.task.dod.smstory.view.MainView;
 
 public class MainActivity extends AppCompatActivity implements MainView {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
     Toolbar toolbar;
     @InjectView(R.id.conversation_recyclerview)
     RecyclerView recyclerView;
-    private MainPresenter mainPresenter;
+    private IMainPresenter mainPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
         setSupportActionBar(toolbar);
-        mainPresenter = new MainPresenterImpl(this, getApplicationContext());
+        mainPresenter = new MainPresenter(this, getApplicationContext());
     }
 
     @Override
